@@ -38,5 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - lajkowanie ofert, endpoint zwracajacy liste polubionych
 - formularz kontaktowy ze sprzedawca
 - widok z ofertami danego uzytkownia
+
 # maker-match
+
 # maker-match
