@@ -38,8 +38,8 @@ const Navigation = () => {
   return (
     <section className="container mx-auto">
       <nav className="relative px-6 py-6 flex justify-between items-center bg-white">
-        <Link href="/">
-          <a className="text-3xl font-bold leading-none">MakersMatch</a>
+        <Link href="/" className="text-3xl font-bold leading-none">
+          MakersMatch
         </Link>
 
         <div className="lg:hidden">
@@ -59,15 +59,19 @@ const Navigation = () => {
         </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <Link href="/">
-              <a className="text-sm text-gray-400 hover:text-gray-500">Start</a>
+            <Link
+              href="/"
+              className="text-sm text-gray-400 hover:text-gray-500"
+            >
+              Start
             </Link>
           </li>
           <li>
-            <Link href="/profiles/browse">
-              <a className="text-sm text-gray-400 hover:text-gray-500">
-                Browse
-              </a>
+            <Link
+              href="/profiles/browse"
+              className="text-sm text-gray-400 hover:text-gray-500"
+            >
+              Browse
             </Link>
           </li>
           <li>
@@ -78,10 +82,11 @@ const Navigation = () => {
           </li>
           {session && status === "authenticated" && (
             <li>
-              <Link href="/my-profile">
-                <a className="text-sm text-gray-400 hover:text-gray-500">
-                  My profile
-                </a>
+              <Link
+                href="/my-profile"
+                className="text-sm text-gray-400 hover:text-gray-500"
+              >
+                My profile
               </Link>
             </li>
           )}
@@ -99,17 +104,19 @@ const Navigation = () => {
           )}
         </ul>
         {!session && status === "unauthenticated" && (
-          <Link href="/login">
-            <a className="hidden lg:inline-block py-2 px-6 bg-green-500 hover:bg-green-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200">
-              Sign in
-            </a>
+          <Link
+            href="/login"
+            className="hidden lg:inline-block py-2 px-6 bg-green-500 hover:bg-green-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200"
+          >
+            Sign in
           </Link>
         )}
         {session && status === "authenticated" && (
-          <Link href="/">
-            <a className="hidden lg:inline-block py-2 px-6 bg-green-500 hover:bg-green-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200">
-              {session.user.email}
-            </a>
+          <Link
+            href="/"
+            className="hidden lg:inline-block py-2 px-6 bg-green-500 hover:bg-green-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200"
+          >
+            {session.user.email}
           </Link>
         )}
       </nav>
@@ -144,17 +151,19 @@ const Navigation = () => {
           <div>
             <ul>
               <li className="mb-1">
-                <Link href="/">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
-                    Start
-                  </a>
+                <Link
+                  href="/"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                >
+                  Start
                 </Link>
               </li>
               <li className="mb-1">
-                <Link href="/profiles/browse">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
-                    Browse
-                  </a>
+                <Link
+                  href="/profiles/browse"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                >
+                  Browse
                 </Link>
               </li>
               <li className="mb-1">
@@ -164,10 +173,11 @@ const Navigation = () => {
                 />
               </li>
               <li className="mb-1">
-                <Link href="/profiles/browse">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
-                    Browse
-                  </a>
+                <Link
+                  href="/profiles/browse"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                >
+                  Browse
                 </Link>
               </li>
               <li className="mb-1">
@@ -177,10 +187,11 @@ const Navigation = () => {
                 />
               </li>
               <li className="mb-1">
-                <Link href="/my-profile">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded">
-                    My profile
-                  </a>
+                <Link
+                  href="/my-profile"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                >
+                  My profile
                 </Link>
               </li>
             </ul>
@@ -188,10 +199,11 @@ const Navigation = () => {
           <div className="mt-auto">
             <div className="pt-6">
               {!session && status === "unauthenticated" && (
-                <Link href="/login">
-                  <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl">
-                    Sign In
-                  </a>
+                <Link
+                  href="/login"
+                  className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl"
+                >
+                  Sign In
                 </Link>
               )}
               {session && status === "authenticated" && (

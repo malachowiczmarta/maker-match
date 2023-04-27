@@ -26,10 +26,11 @@ export default function Login() {
         <div className="container mx-auto px-4">
           <div className="max-w-xl mx-auto">
             <div className="mb-10 text-center ">
-              <Link href="/">
-                <a className="text-white text-3xl font-bold leading-none">
-                  MakersMatch
-                </a>
+              <Link
+                href="/"
+                className="text-white text-3xl font-bold leading-none"
+              >
+                MakersMatch
               </Link>
             </div>
             <div className="p-6 lg:p-12 bg-white shadow-md rounded">

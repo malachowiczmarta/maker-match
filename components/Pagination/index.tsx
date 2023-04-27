@@ -46,8 +46,8 @@ const Pagination = ({
               }
             )}
           >
-            <Link href={paginationUrl(page)}>
-              <a className="font-bold">{page}</a>
+            <Link href={paginationUrl(page)} className="font-bold">
+              {page}
             </Link>
           </li>
         );
